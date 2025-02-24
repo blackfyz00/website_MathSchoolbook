@@ -1,0 +1,39 @@
+/* src/components/SideMenu.css */
+
+.side-menu {
+    width: 200px; /* Ширина открытого меню */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Анимация при открытии/закрытии */
+  }
+  
+  .side-menu.closed {
+    transform: translateX(-100%); /* Сдвигает меню за пределы экрана */
+  }
+  
+  .menu-toggle {
+    position: absolute;
+    top: 10px;
+    right: -40px; /* Позиционирует кнопку снаружи меню */
+    width: 40px; /* Размер кнопки */
+    height: 40px;
+    display: flex; /* Центрирование содержимого */
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%; /* Делает кнопку круглой */
+    font-size: 20px; /* Размер иконки */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-toggle:hover {
+    background-color: #555;
+  }

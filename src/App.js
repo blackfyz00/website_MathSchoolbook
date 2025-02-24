@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Home from './pages/Home';
+import SideMenu from './components/SideMenu';
+import Math from './pages/Math';
+import Intro from './pages/Intro';
+import Algebra from './pages/Algebra';
+import Geometry from './pages/Geometry';
+import LinearEquations from './pages/LinearEquations'; // Новый импорт
+import QuadraticEquations from './pages/QuadraticEquations'; // Новый импорт
+import Functions from './pages/Functions'; // Новый импорт
+import './styles/global.css'; // Добавляем этот импорт
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+      <SideMenu />
+
+      {/* Основное содержимое */}
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/math" element={<Math />} />
+          <Route path="/math/intro" element={<Intro />} />
+          <Route path="/math/algebra" element={<Algebra />} />
+          <Route path="/math/algebra/linear" element={<LinearEquations />} /> {/* Новый маршрут */}
+          <Route path="/math/algebra/quadratic" element={<QuadraticEquations />} /> {/* Новый маршрут */}
+          <Route path="/math/algebra/functions" element={<Functions />} /> {/* Новый маршрут */}
+          <Route path="/math/geometry" element={<Geometry />} />
+        </Routes>
+      </div>
+      </div>
+    </Router>
   );
 }
-
 export default App;
