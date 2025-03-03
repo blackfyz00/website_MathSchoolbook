@@ -22,109 +22,50 @@ nav {
   border-radius: 10px; /* Скругленные углы */
 }
   
-  nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #ffeb3b;
-  }
-  
-  h1, h2 {
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
-  }
-  
-  .container {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 20px auto;
-  }
-  
-  button {
-    background: #03a9f4;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s ease;
-  }
-  
-  button:hover {
-    background: #0288d1;
-  }
-
-  /* Стили для списка тем */
-.math-navigation {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left; /* Выравниваем текст по левому краю */
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-.math-navigation li {
-  margin-bottom: 8px; /* Отступ между пунктами */
+nav a:hover {
+  color: #ffeb3b;
 }
 
-.math-navigation a {
-  text-decoration: none; /* Убираем подчеркивание */
-  color: #333; /* Цвет текста */
-  font-size: 16px; /* Размер шрифта */
-  display: block; /* Ссылка занимает всю ширину пункта списка */
-  padding: 8px 12px; /* Внутренние отступы */
-  border-radius: 4px; /* Slightly rounded corners */
-  transition: color 0.3s ease; /* Плавная анимация изменения цвета */
-  background-color: transparent; /* Убираем фон по умолчанию */
+h1, h2 {
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.math-navigation a:hover {
-  background-color: transparent; /* Убираем фон при наведении */
-  color: #007bff; /* Изменяем только цвет текста при наведении */
+p {
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
 }
 
-.math-links {
-  display: flex; /* Используем Flexbox */
-  flex-direction: column; /* Вертикальное размещение */
-  gap: 10px; /* Отступ между ссылками */
-  max-width: 200px; /* Ширина контейнера */
-  margin: 0 auto; /* Центрируем по горизонтали */
-  margin-left: 20%; /* Сдвигаем чуть левее центра */
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
 }
 
-.math-link {
-  text-decoration: none; /* Убираем подчеркивание */
-  color: #fff; /* Белый текст */
-  font-size: 16px; /* Размер шрифта */
-  padding: 10px 20px; /* Внутренние отступы */
-  border-radius: 8px; /* Скругленные углы */
-  background-color: #03a9f4; /* Голубой фон */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
-  text-align: center; /* Выравниваем текст по центру */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Плавная анимация */
+button {
+  background: #03a9f4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
 }
 
-/* При наведении на ссылку */
-.math-link:hover {
-  background-color: #0288d1; /* Темнее голубой цвет */
-  transform: scale(1.05); /* Немного увеличиваем размер */
-}
-
-.math-page h1 {
-  margin-bottom: 140px; /* Добавляем отступ внизу заголовка */
+button:hover {
+  background: #0288d1;
 }
