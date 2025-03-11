@@ -34,25 +34,30 @@ nav a:hover {
   color: #ffeb3b;
 }
 
+.container {
+  margin-left: 370px; /* Отступ слева, равный ширине бокового меню */
+  padding: 20px; /* Исправлено: уменьшено значение padding */
+  box-sizing: border-box; /* Учитываем padding в ширине */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1100px; /* Увеличено для лучшего отображения */
+  width: 100%; /* Занимает всю доступную ширину */
+}
+
 h1, h2 {
   color: #333;
   margin-bottom: 20px;
+  text-align: center; /* Выравнивание заголовков по левому краю */
+  width: 100%; /* Занимают всю ширину контейнера */
 }
 
 p {
   color: #666;
-  max-width: 800px;
+  max-width: 100%; /* Текст занимает всю ширину контейнера */
   margin: 0 auto;
   line-height: 1.8;
-}
-
-.container {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  margin: 20px auto;
+  text-align: width; /* Выравнивание текста по левому краю */
 }
 
 button {
