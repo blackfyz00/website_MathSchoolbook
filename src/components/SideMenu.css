@@ -1,9 +1,9 @@
 .side-menu {
-  width: 300px; /* Ширина открытого меню */
+  width: 350px; /* Ширина открытого меню */
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 125px;
   background-color: #f4f4f4;
   padding: 20px;
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
@@ -18,7 +18,7 @@
   justify-content: space-between;
   width: 100%;
   padding: 10px;
-  background-color: #333;
+  background-color: #555;
   color: white;
   border: none;
   border-radius: 5px;
@@ -28,7 +28,7 @@
 }
 
 .toggle-button:hover {
-  background-color: #555;
+  background-color: #8a51e6;
 }
 
 .toggle-button span {
