@@ -14,14 +14,6 @@ body {
   padding: 20px;
 }
   
-nav {
-  background: rgba(3, 169, 244, 0.7); /* Сlightly transparent blue background */
-  padding: 10px 20px; /* Добавляем горизонтальные отступы */
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px; /* Скругленные углы */
-}
-  
 nav a {
   margin: 0 15px;
   text-decoration: none;
@@ -31,17 +23,17 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffeb3b;
+  color: #11100a;
 }
 
 .container {
-  margin-left: 370px; /* Отступ слева, равный ширине бокового меню */
+  margin-left: 470px; /* Отступ слева, равный ширине бокового меню */
   padding: 20px; /* Исправлено: уменьшено значение padding */
   box-sizing: border-box; /* Учитываем padding в ширине */
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 1100px; /* Увеличено для лучшего отображения */
+  max-width: 1050px; /* Увеличено для лучшего отображения */
   width: 100%; /* Занимает всю доступную ширину */
 }
 
@@ -73,4 +65,22 @@ button {
 
 button:hover {
   background: #0288d1;
+}
+
+.math-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.math-section h2 {
+  color: #2c3e50;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.math-section h3 {
+  margin-top: 1.5rem;
+  color: #34495e;
 }
