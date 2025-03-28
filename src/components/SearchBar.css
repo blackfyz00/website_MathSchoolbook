@@ -1,0 +1,193 @@
+/* Базовые стили поиска */
+.search-top-right {
+  --search-width: 400px;
+  --search-padding: 14px 20px 14px 50px; /* Увеличен левый padding для иконки */
+  --search-radius: 30px;
+  --search-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --focus-shadow: 0 4px 16px rgba(138, 81, 230, 0.25);
+  --primary-color: #8a51e6;
+  --light-purple: #f9f5ff;
+  
+  position: absolute;
+  right: 75px;
+  top: 20px;
+  width: var(--search-width);
+  z-index: 1001;
+}
+
+.search-input-wrapper {
+  position: relative;
+}
+
+/* Единый стиль для иконки (перенесена перед текстом) */
+.search-icon {
+  position: absolute;
+  left: 18px; /* Иконка слева */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  font-size: 18px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.search-top-right input {
+  width: 100%;
+  padding: var(--search-padding);
+  font-size: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: var(--search-radius);
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: var(--search-shadow);
+  background: white;
+}
+
+.search-top-right input:focus {
+  border-color: var(--primary-color);
+  box-shadow: var(--focus-shadow);
+}
+
+/* Стили выпадающего меню с улучшенным отображением сабтопиков */
+.search-results-dropdown {
+  position: absolute;
+  top: 100%;
+  right: -38px; /* Сдвигаем на 10px вправо */
+  width: 100%;
+  max-height: 70vh;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+  border: 1px solid #f0f0f0;
+  padding: 12px 0;
+  z-index: 1002;
+  overflow-y: auto;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.result-item {
+  padding: 12px 20px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  transition: all 0.25s ease;
+}
+
+/* Стили для сабтопиков */
+.subtopic-result {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  position: relative;
+  margin-top: 8px;
+}
+
+.subtopic-result:before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #e0d0ff, #c5b0e6);
+}
+
+.subtopic-link {
+  display: block;
+  padding: 8px 15px;
+  margin: 2px 0;
+  background: #faf9ff;
+  border-radius: 6px;
+  color: #555;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.subtopic-link:before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.subtopic-link:hover {
+  background: var(--light-purple);
+  color: var(--dark-purple);
+  transform: translateX(5px);
+}
+
+/* Иерархия элементов */
+.result-class {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-purple);
+  display: flex;
+  align-items: center;
+}
+
+.result-class:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.result-section {
+  font-size: 15px;
+  color: #444;
+  margin: 10px 0 4px 20px;
+  font-weight: 500;
+}
+
+.result-topic {
+  font-size: 15px;
+  color: #333;
+  margin: 8px 0 0 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.result-item:hover {
+  background: var(--light-purple);
+}
+
+/* Полоса прокрутки */
+.search-results-dropdown::-webkit-scrollbar {
+  width: 0px;
+}
+
+.search-results-dropdown::-webkit-scrollbar-track {
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.search-results-dropdown::-webkit-scrollbar-thumb {
+  background: #d0c0f0;
+  border-radius: 10px;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+  .search-top-right {
+    right: 20px;
+    width: calc(100% - 40px);
+  }
+  
+  .search-results-dropdown {
+    max-height: 60vh;
+  }
+  
+  .subtopic-result {
+    padding-left: 20px;
+  }
+}
