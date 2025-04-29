@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import menuData from './menuData';
 import './SideMenu.css';
@@ -17,6 +17,48 @@ function SideMenu() {
   });
 
   const isActiveLink = (path) => location.pathname === path;
+
+  useEffect(() => {
+    let foundClassKey = null;
+    let foundSubjectKey = null;
+    let foundTopicKey = null;
+  
+    let found = false;
+  
+    for (const classItem of menuData) {
+      for (const subject of classItem.subjects) {
+        for (const topic of subject.topics) {
+          for (const subtopic of topic.subtopics) {
+            if (subtopic.path === location.pathname) {
+              foundClassKey = classItem.key;
+              foundSubjectKey = subject.key;
+              foundTopicKey = topic.key;
+              found = true;
+              break;
+            }
+          }
+          if (found) break;
+        }
+        if (found) break;
+      }
+      if (found) break;
+    }
+  
+    if (foundClassKey && foundSubjectKey && foundTopicKey) {
+      setOpenStates({
+        classes: { [foundClassKey]: true },
+        topics: { [foundSubjectKey]: true },
+        sections: { [foundTopicKey]: true }
+      });
+  
+      setActivePath({
+        class: foundClassKey,
+        subject: foundSubjectKey,
+        topic: foundTopicKey
+      });
+    }
+  
+  }, [location.pathname]);
 
   const handleHomeClick = () => {
     // Сбрасываем все состояния при клике на "Главную"
