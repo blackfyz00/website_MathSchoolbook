@@ -5,8 +5,9 @@ body {
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #000; 
   line-height: 1.6;
+  font-size: 20px;
 }
 
 .App {
@@ -37,21 +38,7 @@ nav a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 1050px;
   width: 100%;
-}
-
-h1, h2 {
-  color: #333;
-  margin-bottom: 20px;
-  text-align: center; /* Выравнивание заголовков по левому краю */
-  width: 100%; /* Занимают всю ширину контейнера */
-}
-
-p {
-  color: #666;
-  max-width: 100%; /* Текст занимает всю ширину контейнера */
-  margin: 0 auto;
-  line-height: 1.8;
-  text-align: width; /* Выравнивание текста по левому краю */
+  color: #000; 
 }
 
 button {
@@ -84,5 +71,43 @@ button:hover {
 
 .math-section h3 {
   margin-top: 1.5rem;
-  color: #34495e;
+  color: #000;
+}
+
+.markdown h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.markdown h2,
+.markdown h3 {
+  font-size: 30px;
+  text-indent: 50px;
+  text-align: left;
+}
+
+.markdown figure {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.markdown figcaption {
+  font-style: italic;
+  margin-top: 8px;
+  color: #000;
+  text-align: center;
+}
+
+.markdown p {
+  font-size: 18px;
+  text-indent: 40px; /* Теперь сработает правильно */
+}
+
+.markdown ul,
+.markdown ol {
+  padding-left: 60px; /* Отступ у всего списка */
+}
+
+.markdown li {
+  text-align: left;
 }
