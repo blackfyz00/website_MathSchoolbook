@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
+import CubeAndSphere from './pages/CubeAndSphere';
 import SideMenu from './components/SideMenu';
 import SearchBar from './components/SearchBar';
 import './styles/global.css';
@@ -19,6 +20,7 @@ function App() {
           <div className="page-content">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/math/topic02/cube-sphere" element={<CubeAndSphere/>} />
             </Routes>
           </div>
         </div>
