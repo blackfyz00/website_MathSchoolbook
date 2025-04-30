@@ -59,9 +59,8 @@ nav ul li ul {
   overflow: hidden;
 }
 
-/* Анимация подчеркивания */
-.menu-item:not(.home-link)::after,
-nav ul li a:not(.home-link)::after {
+.menu-item::after,
+nav ul li a::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -72,25 +71,26 @@ nav ul li a:not(.home-link)::after {
   transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.menu-item:hover:not(.home-link)::after,
-nav ul li a:hover:not(.home-link)::after {
+.menu-item:hover::after,
+nav ul li a:hover::after {
   width: 100%;
 }
 
 /* Стили уровней меню */
 .menu-item.class-item {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 24px;
   padding-left: 10px;
 }
 
 .menu-item.subject-item {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .topic-name {
   font-weight: 600;
+  font-size: 18px;
 }
 
 /* Стили для сабтопиков */

@@ -268,16 +268,7 @@ const menuData = [
         key: 'math3',
         topics: [
           {
-            name: 'Числа от 1 до 100. Сложение и вычитание (продолжение)',
-            key: 'topic09',
-            subtopics: [
-              { name: 'Решение уравнений', path: '/math3/topic09/subtopic1'},
-              { name: 'Обозначение геометрических фигур буквами', path: '/math3/topic09/subtopic2'},
-              { name: 'Что узнали. Чему научились', path: '/math3/topic09/subtopic3'},
-            ],
-          },
-          {
-            name: 'Числа от 1 до 100. Умножение и деление (продолжение)',
+            name: 'Умножение и деление.',
             key: 'topic10',
             subtopics: [
               { name: 'Связь деления с умножением', path: '/math3/topic10/subtopic1'},
@@ -439,38 +430,13 @@ const menuData = [
               { name: 'Виды треугольников', path: '/math3/topic13/subtopic3'},
               { name: 'Страничка для любознательных', path: '/math3/topic13/subtopic4'},
               { name: 'Что узнали. Чему научились', path: '/math3/topic13/subtopic5'},              
-            ],
-          },
-          {
-            name: 'Числа от 1 до 1000. Умножение и деление',
-            key: 'topic14',
-            name: 'Числа от 1 до 1000. Умножение и деление',
-            key: 'topic14',
-            subtopics: [
-              { name: 'Приёмы устных вычислений', path: '/math3/topic14/subtopic1'},
-              { name: 'Виды треугольников', path: '/math3/topic14/subtopic2'},
-              { name: 'Приёмы письменных вычислений', path: '/math3/topic14/subtopic3'},
-              { name: 'Умножение трёхзначного числа на однозначное число', path: '/math3/topic14/subtopic4'},
-              { name: 'Деление трёхзначного числа на однозначное число', path: '/math3/topic14/subtopic5'},
-              { name: 'Алгоритм письменного деления вида 748 : 2, 856 : 4', path: '/math3/topic14/subtopic6'},
-              { name: 'Проверка деления умножением', path: '/math3/topic14/subtopic7'},
-              { name: 'Знакомство с калькулятором', path: '/math3/topic14/subtopic8'},
-              { name: 'Что узнали, чему научились в 3 классе', path: '/math3/topic14/subtopic9'},
-              { name: 'Приёмы устных вычислений', path: '/math3/topic14/subtopic1'},
-              { name: 'Виды треугольников', path: '/math3/topic14/subtopic2'},
-              { name: 'Приёмы письменных вычислений', path: '/math3/topic14/subtopic3'},
-              { name: 'Умножение трёхзначного числа на однозначное число', path: '/math3/topic14/subtopic4'},
-              { name: 'Деление трёхзначного числа на однозначное число', path: '/math3/topic14/subtopic5'},
-              { name: 'Алгоритм письменного деления вида 748 : 2, 856 : 4', path: '/math3/topic14/subtopic6'},
-              { name: 'Проверка деления умножением', path: '/math3/topic14/subtopic7'},
-              { name: 'Знакомство с калькулятором', path: '/math3/topic14/subtopic8'},
-              { name: 'Что узнали, чему научились в 3 классе', path: '/math3/topic14/subtopic9'},
             ],
           },
         ],
       },
     ],
   },
+
   {
     class: '4 класс',
     key: 'class4',
@@ -480,176 +446,141 @@ const menuData = [
         key: 'math4',
         topics: [
           {
-            name: 'Числа от 1 до 1000',
-            key: 'topic15',
-            subtopics: [
-              { name: 'Нумерация. Счёт предметов. Разряды', path: '/math4/topic15/subtopic1'},
-              { name: 'Числовые выражения. Порядок выполнения действий', path: '/math4/topic15/subtopic2'},
-              { name: 'Сложение и вычитание', path: '/math4/topic15/subtopic3'},
-              { name: 'Умножение и деление', path: '/math4/topic15/subtopic4'},
-              { name: 'Что узнали. Чему научились', path: '/math4/topic15/subtopic5'},
-            ],
-          },
-          {
-            name: 'Числа, которые больше 1000. Умножение и деление',
-            key: 'topic16',
-            name: 'Числа от 1 до 1000',
-            key: 'topic15',
-            subtopics: [
-              { name: 'Нумерация. Счёт предметов. Разряды', path: '/math4/topic15/subtopic1'},
-              { name: 'Числовые выражения. Порядок выполнения действий', path: '/math4/topic15/subtopic2'},
-              { name: 'Сложение и вычитание', path: '/math4/topic15/subtopic3'},
-              { name: 'Умножение и деление', path: '/math4/topic15/subtopic4'},
-              { name: 'Что узнали. Чему научились', path: '/math4/topic15/subtopic5'},
-            ],
-          },
-          {
-            name: 'Числа, которые больше 1000. Умножение и деление',
-            key: 'topic16',
-            subtopics: [
-              { name: 'Нумерация. Разряды и классы', path: '/math4/topic16/subtopic1'},
-              { name: 'Чтение многозначных чисел', path: '/math4/topic16/subtopic2'},
-              { name: 'Запись многозначных чисел', path: '/math4/topic16/subtopic3'},
-              { name: 'Разрядные слагаемые', path: '/math4/topic16/subtopic4'},
-              { name: 'Сравнение многозначных чисел', path: '/math4/topic16/subtopic5'},
-              { name: 'Увеличение и уменьшение числа в 10, 100, 1000 раз', path: '/math4/topic16/subtopic6'},
-              { name: 'Класс миллионов. Класс миллиардов', path: '/math4/topic16/subtopic7'},
-              { name: 'Проектные задания', path: '/math4/topic16/subtopic8'},
-              { name: 'Что узнали. Чему научились', path: '/math4/topic16/subtopic9'},
-              { name: 'Величины. Единицы длины. Таблица единиц длины', path: '/math4/topic16/subtopic10'},
-              { name: 'Единицы площади. Квадратный километр. Квадратный миллиметр', path: '/math4/topic16/subtopic11'},
-              { name: 'Таблица единиц площади', path: '/math4/topic16/subtopic12'},
-              { name: 'Единицы массы. Тонна. Центнер', path: '/math4/topic16/subtopic13'},
-              { name: 'Таблица единиц массы', path: '/math4/topic16/subtopic14'},
-              { name: 'Единица времени. Год', path: '/math4/topic16/subtopic15'},
-              { name: 'Время от 0 часов до 24 часов', path: '/math4/topic16/subtopic16'},
-              { name: 'Таблица единиц времени', path: '/math4/topic16/subtopic17'},
-              { name: 'Сложение и вычитание. Устные и письменные приёмы вычислений', path: '/math4/topic16/subtopic18'},
-              { name: 'Письменные приёмы вычитания', path: '/math4/topic16/subtopic19'},
-              { name: 'Нахождение неизвестного слагаемого', path: '/math4/topic16/subtopic20'},
-              { name: 'Нахождение неизвестного уменьшаемого и вычитаемого', path: '/math4/topic16/subtopic21'},
-              { name: 'Нахождение нескольких долей целого', path: '/math4/topic16/subtopic22'},
-              { name: 'Сложение и вычитание величин', path: '/math4/topic16/subtopic23'},
-              { name: 'Умножение и деление. Свойства умножения', path: '/math4/topic16/subtopic24'},
-              { name: 'Письменные приёмы умножения. Умножение величины на число', path: '/math4/topic16/subtopic25'},
-              { name: 'Умножение чисел, запись которых оканчивается нулями', path: '/math4/topic16/subtopic26'},
-              { name: 'Нахождение неизвестного множителя, делимого и делителя', path: '/math4/topic16/subtopic27'},
-              { name: 'Деление на однозначное число', path: '/math4/topic16/subtopic28'},
-              { name: 'Присьменные приёмы деления', path: '/math4/topic16/subtopic29'},
-              { name: 'Нумерация. Разряды и классы', path: '/math4/topic16/subtopic1'},
-              { name: 'Чтение многозначных чисел', path: '/math4/topic16/subtopic2'},
-              { name: 'Запись многозначных чисел', path: '/math4/topic16/subtopic3'},
-              { name: 'Разрядные слагаемые', path: '/math4/topic16/subtopic4'},
-              { name: 'Сравнение многозначных чисел', path: '/math4/topic16/subtopic5'},
-              { name: 'Увеличение и уменьшение числа в 10, 100, 1000 раз', path: '/math4/topic16/subtopic6'},
-              { name: 'Класс миллионов. Класс миллиардов', path: '/math4/topic16/subtopic7'},
-              { name: 'Проектные задания', path: '/math4/topic16/subtopic8'},
-              { name: 'Что узнали. Чему научились', path: '/math4/topic16/subtopic9'},
-              { name: 'Величины. Единицы длины. Таблица единиц длины', path: '/math4/topic16/subtopic10'},
-              { name: 'Единицы площади. Квадратный километр. Квадратный миллиметр', path: '/math4/topic16/subtopic11'},
-              { name: 'Таблица единиц площади', path: '/math4/topic16/subtopic12'},
-              { name: 'Единицы массы. Тонна. Центнер', path: '/math4/topic16/subtopic13'},
-              { name: 'Таблица единиц массы', path: '/math4/topic16/subtopic14'},
-              { name: 'Единица времени. Год', path: '/math4/topic16/subtopic15'},
-              { name: 'Время от 0 часов до 24 часов', path: '/math4/topic16/subtopic16'},
-              { name: 'Таблица единиц времени', path: '/math4/topic16/subtopic17'},
-              { name: 'Сложение и вычитание. Устные и письменные приёмы вычислений', path: '/math4/topic16/subtopic18'},
-              { name: 'Письменные приёмы вычитания', path: '/math4/topic16/subtopic19'},
-              { name: 'Нахождение неизвестного слагаемого', path: '/math4/topic16/subtopic20'},
-              { name: 'Нахождение неизвестного уменьшаемого и вычитаемого', path: '/math4/topic16/subtopic21'},
-              { name: 'Нахождение нескольких долей целого', path: '/math4/topic16/subtopic22'},
-              { name: 'Сложение и вычитание величин', path: '/math4/topic16/subtopic23'},
-              { name: 'Умножение и деление. Свойства умножения', path: '/math4/topic16/subtopic24'},
-              { name: 'Письменные приёмы умножения. Умножение величины на число', path: '/math4/topic16/subtopic25'},
-              { name: 'Умножение чисел, запись которых оканчивается нулями', path: '/math4/topic16/subtopic26'},
-              { name: 'Нахождение неизвестного множителя, делимого и делителя', path: '/math4/topic16/subtopic27'},
-              { name: 'Деление на однозначное число', path: '/math4/topic16/subtopic28'},
-              { name: 'Присьменные приёмы деления', path: '/math4/topic16/subtopic29'},
-            ],
-          },
-          {
-            name: 'Числа, которые больше 1000. Умножение и деление (продолжение)',
-            key: 'topic17',
-            name: 'Числа, которые больше 1000. Умножение и деление (продолжение)',
-            key: 'topic17',
-            subtopics: [
-              { name: 'Умножение и деление на однозначное число (продолжение)', path: '/math4/topic17/subtopic1'},
-              { name: 'Скорость. Единицы скорости', path: '/math4/topic17/subtopic2'},
-              { name: 'Умножение числа на произведение', path: '/math4/topic17/subtopic3'},
-              { name: 'Умножение на числа, оканчивающиеся нулями', path: '/math4/topic17/subtopic4'},
-              { name: 'Умножение двух чисел, оканчивающихся нулями', path: '/math4/topic17/subtopic5'},
-              { name: 'Перестановка и группировка множителей', path: '/math4/topic17/subtopic6'},
-              { name: 'Куб', path: '/math4/topic17/subtopic7'},
-              { name: 'Прямоугольный параллелепипед', path: '/math4/topic17/subtopic8'},
-              { name: 'Деление числа на произведение', path: '/math4/topic17/subtopic9'},
-              { name: 'Деление с остатком на 10, 100, 1000', path: '/math4/topic17/subtopic10'},
-              { name: 'Деление на числа, оканчивающиеся нулями', path: '/math4/topic17/subtopic11'},
-              { name: 'Умножение на двузначное и трёхзначное число', path: '/math4/topic17/subtopic12'},
-              { name: 'Письменное умножение на двузначное число', path: '/math4/topic17/subtopic13'},
-              { name: 'Пирамида', path: '/math4/topic17/subtopic14'},
-              { name: 'Цилиндр. Конус', path: '/math4/topic17/subtopic15'},
-              { name: 'Письменное умножение на трёхзначное число', path: '/math4/topic17/subtopic16'},
-              { name: 'Деление на двузначное и трёхзначное число', path: '/math4/topic17/subtopic17'},
-              { name: 'Деление с остатком на двузначное число', path: '/math4/topic17/subtopic18'},
-              { name: 'Письменное деление на трёхзначное число', path: '/math4/topic17/subtopic19'},
-              { name: 'Итоговое повторение всего изученного', path: '/math4/topic17/subtopic20'},
-              { name: 'Умножение и деление на однозначное число (продолжение)', path: '/math4/topic17/subtopic1'},
-              { name: 'Скорость. Единицы скорости', path: '/math4/topic17/subtopic2'},
-              { name: 'Умножение числа на произведение', path: '/math4/topic17/subtopic3'},
-              { name: 'Умножение на числа, оканчивающиеся нулями', path: '/math4/topic17/subtopic4'},
-              { name: 'Умножение двух чисел, оканчивающихся нулями', path: '/math4/topic17/subtopic5'},
-              { name: 'Перестановка и группировка множителей', path: '/math4/topic17/subtopic6'},
-              { name: 'Куб', path: '/math4/topic17/subtopic7'},
-              { name: 'Прямоугольный параллелепипед', path: '/math4/topic17/subtopic8'},
-              { name: 'Деление числа на произведение', path: '/math4/topic17/subtopic9'},
-              { name: 'Деление с остатком на 10, 100, 1000', path: '/math4/topic17/subtopic10'},
-              { name: 'Деление на числа, оканчивающиеся нулями', path: '/math4/topic17/subtopic11'},
-              { name: 'Умножение на двузначное и трёхзначное число', path: '/math4/topic17/subtopic12'},
-              { name: 'Письменное умножение на двузначное число', path: '/math4/topic17/subtopic13'},
-              { name: 'Пирамида', path: '/math4/topic17/subtopic14'},
-              { name: 'Цилиндр. Конус', path: '/math4/topic17/subtopic15'},
-              { name: 'Письменное умножение на трёхзначное число', path: '/math4/topic17/subtopic16'},
-              { name: 'Деление на двузначное и трёхзначное число', path: '/math4/topic17/subtopic17'},
-              { name: 'Деление с остатком на двузначное число', path: '/math4/topic17/subtopic18'},
-              { name: 'Письменное деление на трёхзначное число', path: '/math4/topic17/subtopic19'},
-              { name: 'Итоговое повторение всего изученного', path: '/math4/topic17/subtopic20'},
-            ],
-          },
-        ],
-      },
-    ],
+            name: '',
+            key: 'null',
+            subtopics: []
+          }
+        ]
+      }
+    ]
   },
+
   {
-    class: '9 класс',
-    key: 'class9',
+    class: '5 класс',
+    key: 'class5',
     subjects: [
       {
         name: 'Математика',
-        key: 'math2',
-        key: 'math2',
+        key: 'math5',
         topics: [
           {
-            name: 'Раздел 1: Сложение и вычитание',
-            key: 'topic91',
-            subtopics: [
-              { name: 'Тема 1: Основы сложения', path: '/math9/topic91/subtopic1'},
-              { name: 'Тема 2: Основы вычитания', path: '/math9/topic91/subtopic2'},
-              { name: 'Тема 3: Основы вычитания', path: '/math9/topic91/subtopic3'},
-            ],
-          },
+            name: '',
+            key: 'null',
+            subtopics: []
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    class: '6 класс',
+    key: 'class6',
+    subjects: [
+      {
+        name: 'Математика',
+        key: 'math6',
+        topics: [
           {
-            name: 'Раздел 2: Умножение и деление',
-            key: 'topic92',
+            name: '',
+            key: 'null',
+            subtopics: []
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    class: '7 класс',
+    key: 'class7',
+    subjects: [
+      {
+        name: 'Математика',
+        key: 'math7',
+        topics: [
+          {
+            name: '',
+            key: 'null',
+            subtopics: []
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    class: '8 класс',
+    key: 'class8',
+    subjects: [
+      {
+        name: 'Математика',
+        key: 'math8',
+        topics: [
+          {
+            name: 'Квадратные уравнения',
+            key: 'topic01',
             subtopics: [
-              { name: 'Тема 1: Основы умножения', path: '/math9/topic92/subtopic1'},
-              { name: 'Тема 2: Основы деления', path: '/math9/topic92/subtopic2'},
-              { name: 'Тема 1: Основы умножения', path: '/math9/topic92/subtopic1'},
-              { name: 'Тема 2: Основы деления', path: '/math9/topic92/subtopic2'},
-            ],
-          },
-        ],
-      },
-    ],
+              { name: 'Дискриминант', path: '/math8/topic01/discriminant'},
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    class: '9 класс',
+    key: 'class3',
+    subjects: [
+      {
+        name: 'Математика',
+        key: 'math9',
+        topics: [
+          {
+            name: '',
+            key: 'null',
+            subtopics: []
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    class: '10 класс',
+    key: 'class10',
+    subjects: [
+      {
+        name: 'Математика',
+        key: 'math10',
+        topics: [
+          {
+            name: '',
+            key: 'null',
+            subtopics: []
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    class: '11 класс',
+    key: 'class11',
+    subjects: [
+      {
+        name: 'Математика',
+        key: 'math11',
+        topics: [
+          {
+            name: '',
+            key: 'null',
+            subtopics: []
+          }
+        ]
+      }
+    ]
   },
 
 ];

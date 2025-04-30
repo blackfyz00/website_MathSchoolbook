@@ -31,7 +31,7 @@ nav a:hover {
 .container {
   margin-left: 470px;
   margin-top: 100px; /* Добавленный отступ сверху */
-  padding: 20px;
+  padding: 20px 50px; /* Увеличенные внутренние отступы */
   box-sizing: border-box;
   background: #fff;
   border-radius: 8px;
@@ -74,6 +74,12 @@ button:hover {
   color: #000;
 }
 
+/* === Стили для Markdown контента === */
+
+.markdown {
+  line-height: 1.6;
+}
+
 .markdown h1 {
   font-size: 40px;
   text-align: center;
@@ -82,7 +88,7 @@ button:hover {
 .markdown h2,
 .markdown h3 {
   font-size: 30px;
-  text-indent: 50px;
+  text-indent: 20px;
   text-align: left;
 }
 
@@ -100,14 +106,108 @@ button:hover {
 
 .markdown p {
   font-size: 18px;
-  text-indent: 40px; /* Теперь сработает правильно */
+  text-align: justify;
+  padding-right: 10px;
+  margin-bottom: 1rem;
 }
 
 .markdown ul,
 .markdown ol {
-  padding-left: 60px; /* Отступ у всего списка */
+  padding-left: 40px;
+  text-align: left;
 }
 
 .markdown li {
   text-align: left;
+}
+
+.markdown code {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.markdown pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.markdown img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  display: flex;
+  gap: 2rem; /* Расстояние между элементами */
+  margin: 1rem 0; /* Отступы сверху и снизу */
+}
+
+.image-left,
+.image-right {
+  max-width: 300px;
+  flex: 0 0 auto; /* Фиксированная ширина */
+  text-align: center;
+}
+
+.image-left img,
+.image-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-left figcaption,
+.image-right figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* === Чередующийся layout для карточек с текстом и изображением === */
+
+.image-text-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.image-text-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.image-text-block .text-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-text-block .image-content {
+  flex: 0 0 300px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.image-text-block .image-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-text-block .image-content figcaption {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
 }

@@ -19,6 +19,23 @@ function SideMenu() {
   const isActiveLink = (path) => location.pathname === path;
 
   useEffect(() => {
+        const currentPath = location.pathname;
+
+    // Если это "О нас", сбрасываем всё
+    if (currentPath === '/about') {
+      setOpenStates({
+        classes: {},
+        topics: {},
+        sections: {}
+      });
+      setActivePath({
+        class: null,
+        subject: null,
+        topic: null
+      });
+      return;
+    }
+
     let foundClassKey = null;
     let foundSubjectKey = null;
     let foundTopicKey = null;
@@ -132,7 +149,7 @@ function SideMenu() {
           <li>
             <Link 
               to="/" 
-              className="home-link"
+              className={`menu-item ${isActiveLink('/') ? 'active' : ''}`} 
               onClick={handleHomeClick}
             >
               Главная

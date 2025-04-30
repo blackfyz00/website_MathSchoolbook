@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import CubeAndSphere from './pages/CubeAndSphere';
+import Discriminant from './pages/Discriminant';
+import About from './pages/About';
 import SideMenu from './components/SideMenu';
 import SearchBar from './components/SearchBar';
 import './styles/global.css';
@@ -21,6 +23,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/math/topic02/cube-sphere" element={<CubeAndSphere/>} />
+              <Route path="/math8/topic01/discriminant" element={<Discriminant/>} />
+              <Route path="/about" element={<About/>} />
             </Routes>
           </div>
         </div>
